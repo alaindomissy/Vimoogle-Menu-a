@@ -15,10 +15,10 @@ from os.path import abspath, basename, dirname, join, normpath
 # Absolute filesystem path to this Django project directory.
 
 #DJANGO_ROOT = dirname(dirname(abspath(__file__)))
-DJANGO_ROOT = dirname(abspath(__file__))                           # currently /home/user/python/vimooglemenu
+DJANGO_ROOT = dirname(abspath(__file__))                           # currently /home/user/python/vimooglemenu/vimooglemenu
 
 # Site name.
-SITE_NAME = basename(DJANGO_ROOT)                                  # currently /home/user/python
+SITE_NAME = basename(DJANGO_ROOT)                                  # currently /home/user/python/vimooglemenu
 
 # Absolute filesystem path to the top-level project folder.
 SITE_ROOT = dirname(DJANGO_ROOT)                                   # currently vimooglemenu
@@ -125,7 +125,7 @@ USE_L10N = True
 ################################################################################
 # Absolute path to the directory that holds media.
 # Example: "/home/media/media.lawrence.com/"
-MEDIA_ROOT = '/home/user/python/vimooglemenu/media/'
+MEDIA_ROOT = '/home/user/python/vimooglemenu/vimooglemenu/media/'
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
@@ -156,11 +156,11 @@ ADMIN_MEDIA_PREFIX = '/static/admin/'
 STATICFILES_DIRS = (
     # Always use forward slashes. Use absolute paths
     #normpath(join(DJANGO_ROOT, 'assets')),                               # currently '/home/user/python/vimooglemenu/assets'
-     #         '/home/user/python/vimooglemenu/assets/'
-     #         '/home/user/python/vimooglemenu/homepage/static/',
-   # ('css',   '/home/user/python/vimooglemenu/homepage/static/css/'   ),   # /static/css/style.css will be loaded from indicated directory
-   # ('js',    '/home/user/python/vimooglemenu/homepage/static/js/'   ),    # /static/js/jquery.js will be loaded from ...
-   # ('images','/home/user/python/vimooglemenu/homepage/static/images/')    # /static/images/dot.png   will be loaded from...
+     #         '/home/user/python/vimooglemenu/vimooglemenu/assets/'
+     #         '/home/user/python/vimooglemenu/vimooglemenu/homepage/static/',
+   # ('css',   '/home/user/python/vimooglemenu/vimooglemenu/homepage/static/css/'   ),   # /static/css/style.css will be loaded from indicated directory
+   # ('js',    '/home/user/python/vimooglemenu/vimooglemenu/homepage/static/js/'   ),    # /static/js/jquery.js will be loaded from ...
+   # ('images','/home/user/python/vimooglemenu/vimooglemenu/homepage/static/images/')    # /static/images/dot.png   will be loaded from...
 )
 
 # List of finder classes that know how to find static files in various locations.

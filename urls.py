@@ -7,9 +7,9 @@ admin.autodiscover()
 
 
 urlpatterns = patterns('django.views.static', 
-    url(r'^js/(?P<path>.*)$',       'serve', {'document_root': '/home/user/python/vimooglemenu/homepage/static/js/'    ,  'show_indexes': True} ),
-    url(r'^css/(?P<path>.*)$',      'serve', {'document_root': '/home/user/python/vimooglemenu/homepage/static/css/'   ,  'show_indexes': True} ),
-    url(r'^images/(?P<path>.*)$',   'serve', {'document_root': '/home/user/python/vimooglemenu/homepage/static/images/',  'show_indexes': True} ),
+    url(r'^js/(?P<path>.*)$',       'serve', {'document_root': '/home/user/python/vimooglemenu/vimooglemenu/homepage/static/js/'    ,  'show_indexes': True} ),
+    url(r'^css/(?P<path>.*)$',      'serve', {'document_root': '/home/user/python/vimooglemenu/vimooglemenu/homepage/static/css/'   ,  'show_indexes': True} ),
+    url(r'^images/(?P<path>.*)$',   'serve', {'document_root': '/home/user/python/vimooglemenu/vimooglemenu/homepage/static/images/',  'show_indexes': True} ),
 )
 
 
