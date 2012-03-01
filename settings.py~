@@ -1,4 +1,4 @@
-# Django settings for project googlemenu.
+# Django settings for project vimooglemenu.
 # inspired from http://rdegges.com/the-perfect-django-settings-file
 
 
@@ -15,13 +15,13 @@ from os.path import abspath, basename, dirname, join, normpath
 # Absolute filesystem path to this Django project directory.
 
 #DJANGO_ROOT = dirname(dirname(abspath(__file__)))
-DJANGO_ROOT = dirname(abspath(__file__))                           # currently /home/user/python/googlemenu
+DJANGO_ROOT = dirname(abspath(__file__))                           # currently /home/user/python/vimooglemenu
 
 # Site name.
 SITE_NAME = basename(DJANGO_ROOT)                                  # currently /home/user/python
 
 # Absolute filesystem path to the top-level project folder.
-SITE_ROOT = dirname(DJANGO_ROOT)                                   # currently googlemenu
+SITE_ROOT = dirname(DJANGO_ROOT)                                   # currently vimooglemenu
 
 # Absolute filesystem path to the secret file which holds this project's
 # SECRET_KEY. Will be auto-generated the first time this file is interpreted.
@@ -72,7 +72,7 @@ MANAGERS = ADMINS
 DATABASES = {
    'default': {
         'ENGINE':   'django.db.backends.sqlite3',  # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME':     'googlemenu.db',               # Or path to database file if using sqlite3.
+        'NAME':     'vimooglemenu.db',               # Or path to database file if using sqlite3.
         'USER':     '',                            # Not used with sqlite3.
         'PASSWORD': '',                            # Not used with sqlite3.
         'HOST':     '',                            # Set to empty string for localhost. Not used with sqlite3.
@@ -91,7 +91,7 @@ DATABASES = {
 }
 #DEPRECATED
 #DATABASE_ENGINE = 'sqlite3'     # 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-#DATABASE_NAME = 'googlemenu.db' # Or path to database file if using sqlite3.
+#DATABASE_NAME = 'vimooglemenu.db' # Or path to database file if using sqlite3.
 #DATABASE_USER = ''             # Not used with sqlite3.
 #DATABASE_PASSWORD = ''         # Not used with sqlite3.
 #DATABASE_HOST = ''             # Set to empty string for localhost. Not used with sqlite3.
@@ -135,7 +135,7 @@ USE_L10N = True
 ################################################################################
 # Absolute path to the directory that holds media.
 # Example: "/home/media/media.lawrence.com/"
-MEDIA_ROOT = '/home/user/python/googlemenu/media/'
+MEDIA_ROOT = '/home/user/python/vimooglemenu/media/'
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
@@ -154,7 +154,7 @@ MEDIA_URL = '/media/'
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/home/media/media.lawrence.com/static/"                              
-STATIC_ROOT = os.path.join(os.path.dirname(__file__), 'static')         # currently  '/home/user/python/googlemenu/static'
+STATIC_ROOT = os.path.join(os.path.dirname(__file__), 'static')         # currently  '/home/user/python/vimooglemenu/static'
 #STATIC_ROOT = normpath(join(DJANGO_ROOT, 'static')),
 
 # URL prefix for static files.
@@ -165,12 +165,12 @@ ADMIN_MEDIA_PREFIX = '/static/admin/'
 # Additional locations of static files
 STATICFILES_DIRS = (
     # Always use forward slashes. Use absolute paths
-    #normpath(join(DJANGO_ROOT, 'assets')),                               # currently '/home/user/python/googlemenu/assets'
-     #         '/home/user/python/googlemenu/assets/'
-     #         '/home/user/python/googlemenu/homepage/static/',
-   # ('css',   '/home/user/python/googlemenu/homepage/static/css/'   ),   # /static/css/style.css will be loaded from indicated directory
-   # ('js',    '/home/user/python/googlemenu/homepage/static/js/'   ),    # /static/js/jquery.js will be loaded from ...
-   # ('images','/home/user/python/googlemenu/homepage/static/images/')    # /static/images/dot.png   will be loaded from...
+    #normpath(join(DJANGO_ROOT, 'assets')),                               # currently '/home/user/python/vimooglemenu/assets'
+     #         '/home/user/python/vimooglemenu/assets/'
+     #         '/home/user/python/vimooglemenu/homepage/static/',
+   # ('css',   '/home/user/python/vimooglemenu/homepage/static/css/'   ),   # /static/css/style.css will be loaded from indicated directory
+   # ('js',    '/home/user/python/vimooglemenu/homepage/static/js/'   ),    # /static/js/jquery.js will be loaded from ...
+   # ('images','/home/user/python/vimooglemenu/homepage/static/images/')    # /static/images/dot.png   will be loaded from...
 )
 
 # List of finder classes that know how to find static files in various locations.
@@ -210,8 +210,8 @@ TEMPLATE_LOADERS = (
 
 # Directories to search when loading templates.
 TEMPLATE_DIRS = (
-    '/home/user/python/googlemenu/templates/', 
-    '/home/user/python/googlemenu/homepage/templates/',
+    '/home/user/python/vimooglemenu/templates/', 
+    '/home/user/python/vimooglemenu/homepage/templates/',
 )
 
 ########## END TEMPLATE CONFIGURATION
@@ -256,7 +256,7 @@ INSTALLED_APPS = (
    	
    	'pipeline',
    	
-   	'googlemenu.homepage'
+   	'vimooglemenu.homepage'
 )
     
 ########## CELERY CONFIGURATION
@@ -270,7 +270,7 @@ INSTALLED_APPS = (
 ################################################################################
 
 # obsoleted
-#ROOT_URLCONF = 'googlemenu.urls'
+#ROOT_URLCONF = 'vimooglemenu.urls'
 
 ROOT_URLCONF = '%s.urls' % SITE_NAME
 
@@ -317,9 +317,9 @@ STATICFILES_STORAGE = 'pipeline.storage.PipelineStorage'          # replacement 
 PIPELINE_CSS = {
     'colors': {
         'source_filenames': (
-          'css/googlemenu.css',
+          'css/vimooglemenu.css',
         ),
-        'output_filename': 'css/googlemenupipelined.css',
+        'output_filename': 'css/vimooglemenupipelined.css',
         'extra_context': {
             'media': 'screen,projection',
         },
